@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DiPaolo Phototactic Robot Simulation</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <script>
+    function preventBack(){window.history.forward();}
+    setTimeout("preventBack()", 0);
+    window.onunload=function(){null};
+    </script>
+    
+</head>
+<body>
+    <textarea id="input-text" style="margin: 0px; width: 2196px; height: 200px;"></textArea>
+	<input id="clickMe" type="button" value="clickme" onclick="exec();" />
+    <noscript>This demo will not work if JavaScript is disabled in your browser. 
+		Please enable JavaScript in your browser then load this page again. 
+		Thanks
+	</noscript>
+    
+    <script src="robot.js">
+        /*
+        var canvas = document.getElementById('myCanvas');
+        var context = canvas.getContext('2d');
+        window.setInterval(drawCallback,50);
+        */
+    </script>
+    <div>
+        <ol id="output"></ol>
+    </div>
+    
+</body>
+</html>
